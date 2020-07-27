@@ -133,15 +133,18 @@ static NSMutableDictionary *voidSelectorsPerClass = nil;
 
 // abstract method
 -(void)_sentMessage:(SEL)selector withArguments:(NSArray *)arguments {
-
+    NSLog(@"Delegate Method Implementation");
 }
 
 // abstract method
 -(void)_methodInvoked:(SEL)selector withArguments:(NSArray *)arguments {
+    NSLog(@"Delegate Method Implementation");
 
 }
 
 -(void)dealloc {
+    NSLog(@"Delegate Method Implementation");
+
 }
 
 @end

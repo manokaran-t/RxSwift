@@ -24,7 +24,9 @@ private final class CollectionViewPrefetchDataSourceNotSet
     : NSObject
     , UICollectionViewDataSourcePrefetching {
 
-    func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {}
+    func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
+        print("Datasource default method")
+    }
 
 }
 

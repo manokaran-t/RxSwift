@@ -19,6 +19,8 @@ private struct NopDisposable : Disposable {
     
     /// Does nothing.
     public func dispose() {
+        print("default dispose method")
+
     }
 }
 

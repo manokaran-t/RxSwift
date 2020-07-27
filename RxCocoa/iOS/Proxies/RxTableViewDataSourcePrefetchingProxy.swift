@@ -24,7 +24,9 @@ private final class TableViewPrefetchDataSourceNotSet
     : NSObject
     , UITableViewDataSourcePrefetching {
 
-    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {}
+    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
+        print("Datasource prefetch method")
+    }
 
 }
 

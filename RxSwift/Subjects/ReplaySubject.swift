@@ -65,6 +65,8 @@ public class ReplaySubject<Element>
     
     /// Unsubscribe all observers and release resources.
     public func dispose() {
+        print("default dispose method")
+
     }
 
     /// Creates new instance of `ReplaySubject` that replays at most `bufferSize` last elements of sequence.
@@ -212,7 +214,7 @@ private final class ReplayOne<Element> : ReplayBufferBase<Element> {
     }
     
     override func trim() {
-        
+        print("default trim method")
     }
     
     override func addValueToBuffer(_ value: Element) {
@@ -276,6 +278,6 @@ private final class ReplayAll<Element> : ReplayManyBase<Element> {
     }
     
     override func trim() {
-        
+        print("default trim method")
     }
 }
